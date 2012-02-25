@@ -1,0 +1,9 @@
+libtoolize -c //agrega ltmain.sh -c para que no linkee
+autoheader
+aclocal
+automake --add-missing --copy
+
+no va --->//autoreconf -i  //  ---VER ESTO por ltmain.sh era si no uso libtoolize
+autoconf
+./configure
+make, etc
