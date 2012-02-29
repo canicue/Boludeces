@@ -19,7 +19,7 @@ noinst_PROGRAMS=principal
 principal_SOURCES= principal.c
 
 # Linker options for a.out
-principal_LDFLAGS = $(top_srcdir)/src/funciones/libfunciones.la $(top_srcdir)/src/controlador/libcontrolador.la
-
+principal_LDFLAGS = $(top_srcdir)/src/funciones/libfunciones.la $(top_srcdir)/src/controlador/libcontrolador.la -rpath $(libdir)
+#el  -rpath $(libdir) hace que encuentre las librerias cuando lo instalo , sino no funca(no se como merda)
 # Compiler options for a.out
 principal_CPPFLAGS = -I$(top_srcdir)/src/include
