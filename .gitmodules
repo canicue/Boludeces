@@ -4,3 +4,6 @@
 [submodule "CMake"]
 	path = CMake
 	url = ../CMake/
+[submodule "CDK"]
+	path = CDK
+	url = ../CDK
